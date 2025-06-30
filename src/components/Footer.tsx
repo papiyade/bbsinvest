@@ -86,7 +86,7 @@ const Footer = () => {
         {/* Bottom */}
         <div className="border-t border-gray-800 pt-8 mt-8 text-center">
           <p className="text-gray-400 text-sm">
-            © 2024 BBS Invest Group. Tous droits réservés. | Conforme à la réglementation BCEAO
+            © 2025 BBS Invest Group. Tous droits réservés. | Conforme à la réglementation BCEAO
           </p>
         </div>
       </div>
