@@ -6,6 +6,7 @@ import HowItWorks from './components/HowItWorks';
 import Countries from './components/Countries';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import CookieBanner from './components/CookieBanner';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Countries />
         <Contact />
       </main>
+        <CookieBanner />
       <Footer />
     </div>
   );
