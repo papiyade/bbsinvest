@@ -9,7 +9,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import CookieBanner from './components/CookieBanner';
 import ConformiteFloatingModal from './components/ConformiteFloatingModal';
-import CGU from './Components/CGU';
+import CGU from './components/CGU';
 import Confidentialite from './components/Confidentialite';
 import Securite from './components/Securite';
 
