@@ -77,7 +77,7 @@ const Header = () => {
               ))}
               <a
                 href="#contact"
-                className="block bg-gradient-to-r from-[#AE3D7D] to-blue-900 text-white px-6 py-3 rounded-full text-center font-medium"
+                className="block bg-gradient-to-r from-[#AE3D7D] to-[#E46E2F] text-white px-6 py-3 rounded-full text-center font-medium"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Commencer
