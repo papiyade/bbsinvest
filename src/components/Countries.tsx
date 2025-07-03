@@ -29,12 +29,12 @@ const Countries = () => {
           {countries.map((country, index) => (
             <div
               key={index}
-              className="group bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-6 hover:shadow-lg transition-all duration-300 border border-gray-100"
+              className="group bg-gradient-to-br from-orange-50 to-pink-100 rounded-2xl p-6 hover:shadow-lg transition-all duration-300 border border-gray-100"
             >
               <div className="flex items-center space-x-4">
                 <div className="text-4xl">{country.flag}</div>
                 <div>
-                  <h3 className="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">
+                  <h3 className="text-xl font-bold text-gray-900 group-hover:text-[#AE3D7D] transition-colors">
                     {country.name}
                   </h3>
                   <p className="text-gray-600 flex items-center">
@@ -48,7 +48,7 @@ const Countries = () => {
         </div>
 
         {/* Stats */}
-        <div className="bg-gradient-to-r from-blue-600 to-blue-900 rounded-3xl p-8 md:p-12 text-white">
+        <div className="bg-gradient-to-r from-[#E46E2F] to-[#AE3D7D] rounded-3xl p-8 md:p-12 text-white">
           <div className="grid md:grid-cols-3 gap-8 text-center">
             <div>
               <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-4">

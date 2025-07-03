@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Globe, Phone, Mail } from 'lucide-react';
+import logo from '../assets/logo.png';
+
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -27,15 +29,9 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-900 rounded-xl flex items-center justify-center">
-              <Globe className="w-6 h-6 text-white" />
-            </div>
-            <div className="flex flex-col">
-              <span className="text-xl font-bold text-gray-900">BBS Invest</span>
-              <span className="text-xs text-gray-600 -mt-1">GROUP</span>
-            </div>
-          </div>
+      <div className="flex items-center space-x-2 py-2">
+        <img src={logo} alt="Logo" className="h-14 w-auto object-contain" />
+      </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
@@ -50,7 +46,7 @@ const Header = () => {
             ))}
             <a
               href="#contact"
-              className="bg-gradient-to-r from-blue-600 to-blue-900 text-white px-6 py-2 rounded-full hover:shadow-lg transition-all duration-200 font-medium"
+              className="bg-gradient-to-r from-[#E46E2F] to-[#AE3D7D] text-white px-6 py-2 rounded-full hover:shadow-lg transition-all duration-200 font-medium"
             >
               Commencer
             </a>
@@ -81,7 +77,7 @@ const Header = () => {
               ))}
               <a
                 href="#contact"
-                className="block bg-gradient-to-r from-blue-600 to-blue-900 text-white px-6 py-3 rounded-full text-center font-medium"
+                className="block bg-gradient-to-r from-[#AE3D7D] to-blue-900 text-white px-6 py-3 rounded-full text-center font-medium"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Commencer

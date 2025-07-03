@@ -29,7 +29,7 @@ const Contact = () => {
   const countries = ['Sénégal', 'Côte d\'Ivoire', 'Guinée Conakry', 'Mali', 'Cameroun', 'Sierra Leone'];
 
   return (
-    <section id="contact" className="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
+    <section id="contact" className="py-20 bg-gradient-to-br from-gray-50 to-pink-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
@@ -49,30 +49,31 @@ const Contact = () => {
               
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center flex-shrink-0">
-                    <Mail className="w-6 h-6 text-blue-600" />
+                  <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <Mail className="w-6 h-6 text-[#AE3D7D]" />
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900">Email</h4>
-                    <a href="mailto:contact@bbsmastergroup.com" className="text-blue-600 hover:text-blue-700">
+                    <a href="mailto:contact@bbsmastergroup.com" className="text-[#AE3D7D] hover:text-[#E46E2F] transition-colors">
                       contact@bbsmastergroup.com
                     </a>
                   </div>
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center flex-shrink-0">
-                    <Phone className="w-6 h-6 text-green-600" />
+                  <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <Phone className="w-6 h-6 text-[#AE3D7D]" />
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900">Téléphone</h4>
+                    <a href='tel:+221776919799' className='text-gray-600 text-[#AE3D7D] hover:text-[#E46E2F]'>+221 776919799</a>
                     <p className="text-gray-600">Support 24/7 disponible</p>
                   </div>
                 </div>
 
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center flex-shrink-0">
-                    <MapPin className="w-6 h-6 text-purple-600" />
+                    <MapPin className="w-6 h-6 text-[#AE3D7D]" />
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900">Présence locale</h4>
@@ -87,19 +88,19 @@ const Contact = () => {
               <h3 className="text-xl font-bold text-gray-900 mb-4">Pourquoi nous faire confiance ?</h3>
               <div className="space-y-3">
                 <div className="flex items-center space-x-3">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <CheckCircle className="w-5 h-5 text-[#AE3D7D]" />
                   <span className="text-gray-700">Conforme à la réglementation BCEAO</span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <CheckCircle className="w-5 h-5 text-[#AE3D7D]" />
                   <span className="text-gray-700">Présence physique dans chaque pays</span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <CheckCircle className="w-5 h-5 text-[#AE3D7D]" />
                   <span className="text-gray-700">Accompagnement personnalisé</span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <CheckCircle className="w-5 h-5 text-[#AE3D7D]" />
                   <span className="text-gray-700">Plateforme sécurisée 24/7</span>
                 </div>
               </div>
@@ -112,7 +113,7 @@ const Contact = () => {
             
             {isSubmitted ? (
               <div className="text-center py-8">
-                <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
+                <CheckCircle className="w-16 h-16 text-[#AE3D7D] mx-auto mb-4" />
                 <h4 className="text-xl font-bold text-gray-900 mb-2">Message envoyé !</h4>
                 <p className="text-gray-600">Nous vous recontacterons dans les plus brefs délais.</p>
               </div>
@@ -130,7 +131,7 @@ const Contact = () => {
                       required
                       value={formData.name}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#AE3D7D] focus:border-transparent transition-all"
                     />
                   </div>
                   <div>
@@ -161,7 +162,7 @@ const Contact = () => {
                       required
                       value={formData.company}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#AE3D7D] focus:border-transparent transition-all"
                     />
                   </div>
                   <div>
@@ -174,7 +175,7 @@ const Contact = () => {
                       required
                       value={formData.country}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#AE3D7D] focus:border-transparent transition-all"
                     >
                       <option value="">Sélectionnez votre pays</option>
                       {countries.map((country) => (
@@ -195,13 +196,13 @@ const Contact = () => {
                     value={formData.message}
                     onChange={handleChange}
                     placeholder="Décrivez vos besoins en paiements internationaux..."
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all resize-none"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#AE3D7D] focus:border-transparent transition-all resize-none"
                   ></textarea>
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full bg-gradient-to-r from-blue-600 to-blue-900 text-white py-4 px-6 rounded-xl font-semibold hover:shadow-lg transition-all duration-300 flex items-center justify-center"
+                  className="w-full bg-gradient-to-r from-[#E46E2F] to-[#AE3D7D] text-white py-4 px-6 rounded-xl font-semibold hover:shadow-lg transition-all duration-300 flex items-center justify-center"
                 >
                   <Send className="w-5 h-5 mr-2" />
                   Envoyer la demande

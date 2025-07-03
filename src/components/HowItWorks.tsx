@@ -8,33 +8,33 @@ const HowItWorks = () => {
       icon: UserPlus,
       title: 'Ouverture de compte',
       description: 'Créez votre compte entreprise en ligne ou via nos agences locales. Un conseiller vous accompagne pour vérifier vos documents (RC, NINEA, pièces d\'identité, etc.).',
-      color: 'from-blue-500 to-blue-600'
+      color: 'from-[#E46E2F] to-[#AE3D7D]'
     },
     {
       number: '02',
       icon: FileText,
       title: 'Soumission de la demande',
       description: 'Transmettez votre facture fournisseur, les coordonnées bancaires du bénéficiaire à l\'étranger, et les justificatifs douaniers si nécessaires.',
-      color: 'from-green-500 to-green-600'
+      color: 'from-[#E46E2F] to-[#AE3D7D]'
     },
     {
       number: '03',
       icon: CheckCircle,
       title: 'Validation et taux de change',
       description: 'Nous validons ensemble la transaction et vous proposons le meilleur taux de change du marché. Dès validation, nous lançons le paiement.',
-      color: 'from-purple-500 to-purple-600'
+      color: 'from-[#E46E2F] to-[#AE3D7D]'
     },
     {
       number: '04',
       icon: Eye,
       title: 'Suivi en temps réel',
       description: 'Suivez l\'exécution de votre virement international via votre espace client. Vous recevez une confirmation et preuve de virement (Swift copy) dès que les fonds sont envoyés.',
-      color: 'from-orange-500 to-orange-600'
+      color: 'from-[#E46E2F] to-[#AE3D7D]'
     }
   ];
 
   return (
-    <section id="process" className="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
+    <section id="process" className="py-20 bg-gradient-to-br from-gray-50 to-pink-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
@@ -91,7 +91,7 @@ const HowItWorks = () => {
           </p>
           <a
             href="#contact"
-            className="inline-flex items-center bg-gradient-to-r from-blue-600 to-blue-900 text-white px-8 py-4 rounded-full text-lg font-semibold hover:shadow-lg transition-all duration-300"
+            className="inline-flex items-center bg-gradient-to-r from-[#E46E2F] to-[#AE3D7D] text-white px-8 py-4 rounded-full text-lg font-semibold hover:shadow-lg transition-all duration-300"
           >
             Commencer le processus
           </a>

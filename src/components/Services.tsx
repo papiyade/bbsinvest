@@ -7,25 +7,25 @@ const Services = () => {
       icon: CreditCard,
       title: 'Paiement en devise étrangère',
       description: 'EUR, USD, CNY et autres devises principales acceptées',
-      color: 'from-blue-500 to-blue-600'
+      color: 'from-[#E46E2F] to-[#AE3D7D]'
     },
     {
       icon: Banknote,
       title: 'Virements internationaux',
       description: 'SWIFT, SEPA, IBAN - Tous les standards bancaires',
-      color: 'from-green-500 to-green-600'
+      color: 'from-[#E46E2F] to-[#AE3D7D]'
     },
     {
       icon: TrendingUp,
       title: 'Taux compétitifs',
       description: 'Taux de change transparents et avantageux du marché',
-      color: 'from-purple-500 to-purple-600'
+      color: 'from-[#E46E2F] to-[#AE3D7D]'
     },
     {
       icon: FileText,
       title: 'Gestion documentaire',
       description: 'Justificatifs douaniers et factures fournisseurs',
-      color: 'from-orange-500 to-orange-600'
+      color: 'from-[#E46E2F] to-[#AE3D7D]'
     }
   ];
 
@@ -59,7 +59,7 @@ const Services = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Un service pensé pour les entreprises en{' '}
-            <span className="bg-gradient-to-r from-blue-600 to-blue-900 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-[#AE3D7D] to-[#E46E2F] bg-clip-text text-transparent">
               Afrique de l'Ouest
             </span>
           </h2>
@@ -86,7 +86,7 @@ const Services = () => {
         </div>
 
         {/* Why Choose Us */}
-        <div className="bg-gradient-to-br from-gray-50 to-blue-50 rounded-3xl p-8 md:p-12">
+        <div className="bg-gradient-to-br from-gray-50 to-pink-50 rounded-3xl p-8 md:p-12">
           <div className="text-center mb-12">
             <h3 className="text-3xl font-bold text-gray-900 mb-4">
               Pourquoi nous choisir pour vos paiements à l'international ?
@@ -100,7 +100,7 @@ const Services = () => {
             {advantages.map((advantage, index) => (
               <div key={index} className="text-center">
                 <div className="w-16 h-16 bg-white rounded-2xl shadow-lg flex items-center justify-center mx-auto mb-4">
-                  <advantage.icon className="w-8 h-8 text-blue-600" />
+                  <advantage.icon className="w-8 h-8 text-[#AE3D7D]" />
                 </div>
                 <h4 className="text-lg font-semibold text-gray-900 mb-2">{advantage.title}</h4>
                 <p className="text-gray-600">{advantage.description}</p>
