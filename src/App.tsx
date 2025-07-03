@@ -7,6 +7,7 @@ import Countries from './components/Countries';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import CookieBanner from './components/CookieBanner';
+import ConformiteFloatingModal from './components/ConformiteFloatingModal';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Services />
         <HowItWorks />
         <Countries />
+        <ConformiteFloatingModal />
         <Contact />
       </main>
         <CookieBanner />
