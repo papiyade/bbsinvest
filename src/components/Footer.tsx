@@ -1,20 +1,27 @@
 import React from 'react';
-import { Globe, Mail, MapPin, Shield } from 'lucide-react';
-import logo from '../assets/logo.png';
+import { Link } from 'react-router-dom';
+import { Shield, Globe, Mail, MapPin } from 'lucide-react';
+import logo from '../assets/logo.png'; // adapte si nécessaire
+
+const countries = [
+  'Sénégal',
+  'Côte d’Ivoire',
+  'Guinée Conakry',
+  'Mali',
+  'Cameroun',
+  'Sierra Leone'
+];
 
 const Footer = () => {
-  const countries = ['Sénégal', 'Côte d\'Ivoire', 'Guinée Conakry', 'Mali', 'Cameroun', 'Sierra Leone'];
-
   return (
-    <footer className=" bg-gray-900 text-white">
+    <footer className="bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          
           {/* Company Info */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-2 mb-6">
-              <div className="flex items-center space-x-2 py-2">
-                <img src={logo} alt="Logo" className="h-14 w-auto object-contain" />
-              </div>
+              <img src={logo} alt="Logo" className="h-14 w-auto object-contain" />
             </div>
             <p className="text-gray-300 mb-6 max-w-lg leading-relaxed">
               Solution digitale de paiements internationaux pour les entreprises d'Afrique de l'Ouest. 
@@ -81,10 +88,15 @@ const Footer = () => {
         </div>
 
         {/* Bottom */}
-        <div className="border-t border-gray-800 pt-8 mt-8 text-center">
-          <p className="text-gray-400 text-sm">
+        <div className="border-t border-gray-800 pt-6 mt-6 text-center">
+          <p className="text-gray-400 text-sm mb-2">
             © 2025 BBS Invest Group. Tous droits réservés. | Conforme à la réglementation BCEAO
           </p>
+          <div className="flex justify-center gap-4 text-sm text-gray-400 font-medium">
+            <Link to="/cgu" className="hover:underline"><p>Conditions Générales</p></Link>
+            <Link to="/confidentialite" className="hover:underline"><p>Politique de Confidentialité</p></Link>
+            <Link to="/securite" className="hover:underline"><p>Politique de Sécurité</p></Link>
+          </div>
         </div>
       </div>
     </footer>
